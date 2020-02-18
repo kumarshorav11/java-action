@@ -12,5 +12,9 @@ public class Hello {
         response.addProperty("greeting", "Hello, " + name + "!");
         return response;
     }
+	
+	public static void main(String...strings) {
+		System.out.println("Hello");
+	}
 
 }
