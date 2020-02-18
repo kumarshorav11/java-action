@@ -12,5 +12,12 @@ public class Hello {
         response.addProperty("greeting", "Hello, " + name + "!");
         return response;
     }
+	
+	public static void main(String...strings) {
+		JsonObject response = new JsonObject();
+		response.addProperty("name", "shorav");
+		System.out.println(main(response).toString());
+
+	}
 
 }
