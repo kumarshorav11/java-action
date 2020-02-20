@@ -14,7 +14,12 @@ public class Hello {
     }
 	
 	public static void main(String...strings) {
-		System.out.println("Hello");
+		String name = "stranger";
+		 JsonObject response = new JsonObject();
+		 if(strings.length > 0)
+			 name = strings[0];
+	     response.addProperty("greeting", "Hello, " + name + "!");
+	     System.out.println(response);
 	}
 
 }
