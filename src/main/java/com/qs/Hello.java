@@ -4,6 +4,8 @@ import com.google.gson.JsonObject;
 
 public class Hello {
 
+	public static final String API_ROOT = "https://api.predic8.de:443/shop";
+	
 	public static JsonObject main(JsonObject args) {
         String name = "stranger";
         if (args.has("name"))
@@ -20,6 +22,7 @@ public class Hello {
 			 name = strings[0];
 	     response.addProperty("greeting", "Hello, " + name + "!");
 	     System.out.println(response);
+	     
+	     
 	}
-
 }
